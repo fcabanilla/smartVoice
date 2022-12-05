@@ -1,0 +1,34 @@
+{
+  "name": "smartvoice",
+  "version": "1.0.0",
+  "description": "Una herramienta de síntesis de voz que permite a la IA generar habla a partir de texto utilizando técnicas de aprendizaje automático.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcabanilla/smartVoice.git"
+  },
+  "keywords": [
+    "síntesis",
+    "de",
+    "voz",
+    "aprendizaje",
+    "automático",
+    "texto",
+    "a",
+    "habla",
+    "habla",
+    "natural",
+    "voz",
+    "personalizada",
+    "IA"
+  ],
+  "author": "fcabanilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fcabanilla/smartVoice/issues"
+  },
+  "homepage": "https://github.com/fcabanilla/smartVoice#readme"
+}
