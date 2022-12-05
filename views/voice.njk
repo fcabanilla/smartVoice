@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <meta charset="UTF-8">
+      <title>Síntesis de voz</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <!-- Font Awesome CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <!-- Bootstrap JavaScript -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </head>
+    <body class="bg-dark">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <a class="navbar-brand" href="#">Título de la app</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i id="play-icon" class="fa fa-play"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Título 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Título 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Título 4</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Título 5
+      </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Opción 1</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Opción 2</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Opción 3</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+      <div class="container">
+        <textarea></textarea>
+        <div class="row">
+          <div class="col">
+            <ul>
+              <!-- Historial de diálogos -->
+              <li>{{ voice }}</li>
+              <!-- ... -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <!-- Barra de volumen -->
+            <input type="range">
+          </div>
+        </div>
+      </div>
+    </body>
+    <script>
+      $(document).ready(function () {
+        $("#play-icon").click(function () {
+          // Agregar o quitar la clase fa-play o fa-pause al hacer click
+          $(this).toggleClass("fa-play fa-pause");
+        });
+      });
+    </script>
+  </html>
